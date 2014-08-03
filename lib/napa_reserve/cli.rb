@@ -1,5 +1,6 @@
 require 'git'
 require 'napa'
+require 'napa/cli'
 require 'napa_reserve/deploy'
 
 Dotenv.load(Napa.env.test? ? '.env.test' : '.env')
