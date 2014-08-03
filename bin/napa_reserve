@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'napa/cli'
+require 'napa_reserve/cli'
+
+Napa::CLI::Base.start(ARGV)
