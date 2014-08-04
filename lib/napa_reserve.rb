@@ -9,6 +9,7 @@ require 'napa_reserve/deploy'
 require 'napa_reserve/deprecations/active_support_behavior'
 require 'napa_reserve/deprecations/entity'
 require 'napa_reserve/deprecations/filter_by_hash'
+require 'napa_reserve/deprecations/napa_setup'
 
 module NapaReserve
 end
