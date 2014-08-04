@@ -12,6 +12,8 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Like a fine wine, web services get better with age}
   spec.homepage      = "https://github.com/bellycard/napa_reserve"
   spec.license       = "MIT"
+  spec.required_ruby_version = '~> 2.0'
+  spec.executables   << 'napa_reserve'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
@@ -19,6 +21,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'napa'
+  spec.add_dependency 'octokit'
+  spec.add_dependency 'git'
+  spec.add_dependency 'thor'
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
