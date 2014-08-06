@@ -60,7 +60,7 @@ module NapaReserve
     end
 
     def local_head_revision
-      local_repo.object('HEAD^').sha
+      local_repo.object('HEAD').sha
     end
 
     def deployable?
